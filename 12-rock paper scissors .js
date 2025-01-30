@@ -22,6 +22,8 @@ update()
     document.querySelector('.pp').innerHTML=`Are you sure you want to reset the score 
     <button class="yes"  onclick="reset();document.querySelector('pp').innerHTML='';">YES</button>
     <button class="no" onclick="document.querySelector('pp').innerHTML='';">NO</button>`
+    document.querySelector('.yes').addEventListener('click',()=>{reset();document.querySelector('pp').innerHTML='';}
+    document.querySelector('.no').addEventListener('click',()=>{document.querySelector('pp').innerHTML='';}                                              
   })
   
   function computerMove(){
